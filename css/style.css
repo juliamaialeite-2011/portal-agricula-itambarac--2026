@@ -1,0 +1,463 @@
+/* ========================================
+   PALETA DE CORES AGRÍCOLA
+   ======================================== */
+:root {
+    --cor-verde-escuro: #2d5016;
+    --cor-verde-claro: #7cb342;
+    --cor-terra: #8b7355;
+    --cor-amarelo: #ffd54f;
+    --cor-branco: #ffffff;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-cinza-escuro: #333333;
+    --cor-texto: #333333;
+}
+
+/* ========================================
+   RESET E ESTILO GLOBAL
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-branco);
+}
+
+/* ========================================
+   HEADER / NAVEGAÇÃO
+   ======================================== */
+header {
+    background: linear-gradient(135deg, var(--cor-verde-escuro) 0%, var(--cor-verde-claro) 100%);
+    color: var(--cor-branco);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-verde-escuro);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, var(--cor-verde-escuro) 0%, var(--cor-verde-claro) 100%);
+    color: var(--cor-branco);
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-explore {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-verde-escuro);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-explore a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-image {
+    max-width: 400px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   SEÇÕES PRINCIPAIS (CARDS)
+   ======================================== */
+.main-sections {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.section-card {
+    background-color: var(--cor-branco);
+    border: 2px solid var(--cor-verde-claro);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--cor-amarelo);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-card h3 {
+    color: var(--cor-verde-escuro);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.section-card p {
+    color: var(--cor-texto);
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--cor-verde-claro);
+    color: var(--cor-branco);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-verde-escuro);
+    transform: scale(1.05);
+}
+
+/* ========================================
+   PÁGINA HEADER
+   ======================================== */
+.page-header {
+    background: linear-gradient(135deg, var(--cor-verde-escuro) 0%, var(--cor-verde-claro) 100%);
+    color: var(--cor-branco);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   SEÇÕES DE CONTEÚDO
+   ======================================== */
+.content-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.content-section h2 {
+    color: var(--cor-verde-escuro);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--cor-amarelo);
+    padding-bottom: 1rem;
+}
+
+.content-section h3 {
+    color: var(--cor-verde-claro);
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   GRID DE CULTURAS
+   ======================================== */
+.culture-grid,
+.livestock-grid,
+.festivals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.culture-card,
+.livestock-card,
+.festival-card {
+    background-color: var(--cor-cinza-claro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.culture-card:hover,
+.livestock-card:hover,
+.festival-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.culture-card img,
+.livestock-card img,
+.festival-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.culture-card h3,
+.livestock-card h3,
+.festival-card h3 {
+    color: var(--cor-verde-escuro);
+    padding: 1rem 1rem 0 1rem;
+}
+
+.culture-card p,
+.livestock-card p,
+.festival-card p {
+    padding: 0.5rem 1rem 1rem 1rem;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   LAYOUTS COM IMAGEM E TEXTO
+   ======================================== */
+.tech-content,
+.history-content,
+.family-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tech-text,
+.history-text,
+.family-text,
+.family-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tech-text ul,
+.history-text ul,
+.family-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-text li,
+.history-text li,
+.family-text li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.tech-image img,
+.history-image img,
+.family-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   GRID DE GASTRONOMIA
+   ======================================== */
+.gastronomy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gastronomy-item {
+    background-color: var(--cor-cinza-claro);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-verde-claro);
+}
+
+.gastronomy-item h4 {
+    color: var(--cor-verde-escuro);
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   VALORES
+   ======================================== */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    background: linear-gradient(135deg, var(--cor-verde-claro) 0%, var(--cor-verde-escuro) 100%);
+    color: var(--cor-branco);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h3 {
+    color: var(--cor-amarelo);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    color: var(--cor-branco);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background: linear-gradient(135deg, var(--cor-verde-escuro) 0%, var(--cor-verde-claro) 100%);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ========================================
+   UTILITÁRIOS
+   ======================================== */
+.section-intro {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    margin-bottom: 2rem;
+}
+
+.team-info,
+.about-content,
+.contact-info,
+.tech-details,
+.results-content {
+    background-color: var(--cor-cinza-claro);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--cor-verde-claro);
+}
+
+.team-info p,
+.about-content p,
+.contact-info p,
+.tech-details p,
+.results-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.team-info strong,
+.about-content strong,
+.tech-details strong,
+.results-content strong {
+    color: var(--cor-verde-escuro);
+}
+
+.tech-details ul,
+.results-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.tech-details li,
+.results-content li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.tech-details li::before,
+.results-content li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--cor-verde-claro);
+    font-weight: bold;
+}
