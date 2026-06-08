@@ -1,0 +1,394 @@
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ======================================== */
+
+/* ========================================
+   TABLET (768px e acima)
+   ======================================== */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        max-width: 300px;
+    }
+
+    /* Page Header */
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Content Section */
+    .content-section {
+        padding: 0 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Grids */
+    .culture-grid,
+    .livestock-grid,
+    .festivals-grid,
+    .gastronomy-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Layouts com 2 colunas */
+    .tech-content,
+    .history-content,
+    .family-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .family-image {
+        order: -1;
+    }
+
+    /* Main Sections */
+    .main-sections {
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+    }
+
+    /* Cards */
+    .section-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ========================================
+   MOBILE (480px e abaixo)
+   ======================================== */
+@media screen and (max-width: 480px) {
+    /* Global */
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .nav-menu a {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+        display: block;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-explore {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-image {
+        max-width: 200px;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 2rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Content */
+    .content-section {
+        margin: 1.5rem auto;
+        padding: 0 0.5rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Cards */
+    .section-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Culture/Livestock Cards */
+    .culture-card img,
+    .livestock-card img,
+    .festival-card img {
+        height: 150px;
+    }
+
+    .culture-card h3,
+    .livestock-card h3,
+    .festival-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .culture-card p,
+    .livestock-card p,
+    .festival-card p {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Value Cards */
+    .value-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .value-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .value-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Info Boxes */
+    .team-info,
+    .about-content,
+    .contact-info,
+    .tech-details,
+    .results-content {
+        padding: 1rem;
+    }
+
+    .team-info p,
+    .about-content p,
+    .contact-info p,
+    .tech-details p,
+    .results-content p {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+    }
+
+    /* Lists */
+    .tech-details li,
+    .results-content li {
+        padding: 0.3rem 0;
+        padding-left: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    /* Section Intro */
+    .section-intro {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Gastronomy Items */
+    .gastronomy-item {
+        padding: 1rem;
+    }
+
+    .gastronomy-item h4 {
+        font-size: 1rem;
+    }
+
+    .gastronomy-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   EXTRA LARGE SCREENS (1400px+)
+   ======================================== */
+@media screen and (min-width: 1400px) {
+    .content-section {
+        max-width: 1400px;
+    }
+
+    .main-sections {
+        max-width: 1400px;
+    }
+
+    .navbar {
+        max-width: 1400px;
+    }
+
+    .section-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+}
+
+/* ========================================
+   IMPRESSORA (PRINT)
+   ======================================== */
+@media print {
+    header,
+    footer,
+    .btn,
+    .btn-explore {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .content-section {
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ========================================
+   ACESSIBILIDADE - CONTRASTE
+   ======================================== */
+@media (prefers-contrast: more) {
+    :root {
+        --cor-verde-escuro: #1a3009;
+        --cor-verde-claro: #5a8c2a;
+        --cor-texto: #1a1a1a;
+    }
+
+    .value-card {
+        border: 2px solid #000;
+    }
+
+    .section-card {
+        border-width: 3px;
+    }
+}
+
+/* ========================================
+   MODO ESCURO (DARK MODE)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-branco: #1a1a1a;
+        --cor-cinza-claro: #2a2a2a;
+        --cor-cinza-escuro: #e0e0e0;
+        --cor-texto: #e0e0e0;
+    }
+
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .section-card {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+    }
+
+    .team-info,
+    .about-content,
+    .contact-info,
+    .tech-details,
+    .results-content {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+    }
+}
